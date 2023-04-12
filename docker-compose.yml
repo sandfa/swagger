@@ -9,5 +9,5 @@ services:
             - BASE_URL=/swagger
             - SWAGGER_JSON=/swagger.yml
         volumes:
-            - '/bar:/foo'
+            - './swagger.yml:/swagger.yml'
         image: swaggerapi/swagger-ui
